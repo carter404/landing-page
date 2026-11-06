@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column; /* Stack the sections vertically */
+    min-height: 100vh;      /* Ensure the page is at least full height */
+    width: 100%;            /* Stretch to full width */
+}
+
+.section {
+    width: 100%;            /* Force each box to span edge-to-edge */
+    display: flex;          /* Optional: Enables flex alignment for content inside the box */
+    justify-content: center;/* Optional: Centers text/content horizontally */
+    align-items: center;    /* Optional: Centers text/content vertically */
+}
+
+.hero {
+    height: 80vh;           /* Takes up exactly 80% of the screen height */
+    background-color: #1a1a2e;
+    color: white;
+}
+
+.about {
+    height: 50vh;           /* Takes up exactly 50% of the screen height */
+    background-color: #e94560;
+}
+
+.projects {
+    min-height: 100vh;      /* Takes up 100% of screen height, but grows if content overflows */
+    background-color: #0f3460;
+    color: white;
+}
